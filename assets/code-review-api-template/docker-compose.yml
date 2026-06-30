@@ -1,0 +1,14 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - code-review-data:/app/data
+    environment:
+      DATABASE_URL: sqlite:////app/data/code_review_skill.db
+
+volumes:
+  code-review-data:
