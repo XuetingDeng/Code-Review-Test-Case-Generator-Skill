@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Review Test Generator"
+  short_description: "Build AI code review and test APIs"
+  default_prompt: "Use $code-review-test-case-generator to build or extend a FastAPI backend that reviews code and generates test cases."
